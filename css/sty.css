@@ -1,0 +1,58 @@
+body{
+    font-family: Tahoma , Arial;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 1000px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+#header{
+    height: 150px;
+    background-image: url("cgvlogo.png");;
+    border: 2px solid #CDCDCD;
+}
+#header ul {
+    margin-left: 720px;
+    margin-top: 110px;
+    padding-top: 10px;
+    float:left;
+    width: 210px;
+}
+#header ul li{
+list-style: none;
+}
+
+#header ul li a{
+text-decoration: none;
+}
+#nav ul {
+    border: 1px solid #CDCDCD;
+    background-color: #F5F5F5;
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 1px;
+}
+#nav ul li{
+    float : left;
+    width: 247px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+#nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+#nav ul li a:hover {
+    background: rgba(0, 0, 255, 0.36);
+    color: rgba(0, 0, 0, 0.69);
+}
+

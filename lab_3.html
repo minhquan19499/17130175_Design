@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Trang chủ | Minh Quân Phạm</title>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<meta name="description" content="Minima is a minimal, clean HTML5 multi-purpose template, well-coded & commented code"/>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+	<header>
+
+		<div class="wrapper">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="lab.html">Lab</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+	</header><!-- End Header -->
+
+	<section class="billboard">
+		<section class="caption">
+			<p class="cap_title">Welcome to my website</p>
+		</section>
+	</section><!-- End billboard -->
+
+
+	<div id="contain">
+		<div class="tab">
+			<button class="tablinks active">Requirement</button>
+			<button class="tablinks"> Exercise1</button>
+			<button class="tablinks"> Exercise2</button>
+			<button class="tablinks">Design</button>
+			<button class="tablinks">Implement</button>
+		</div>
+
+		<div id="Requirement" class="tabcontent">
+			<p>
+				1.Trong menu Labs,tạo 1 menu Lab3 (file lab3.html) sau đó tạo 2 
+				tab Ex1,Ex2 <br>
+				2.Ex1: Thiết kế 1 trang đơn giản sử dụng mẫu F-pattern ==> Chuyển sang html (ex1.html)
+				  Ex2: Thiết kế 1 trang đơn giản sử dụng mẫu Z-pattern ==> Chuyển sang html (ex2.html)<br>
+				3.Với cả Ex1,Ex2: Tạo 2 tab Design và Implementation <br>
+				
+			</p>
+		</div>
+		
+		<div id="Design" class="tabcontent">
+			<p>Thiết kế trên giấy</p>
+
+			<button class="download">Download file</button>
+			<p>Thiết kế trên Figma</p>
+			
+			<button class="download">Download file</button>
+			</div>
+		</div>
+
+		<div id="Implement" class="tabcontent">
+			<h3>Implement</h3>
+			<ul>
+			<li><a href=""> </a>
+			<li><a href=""> </a>
+			</ul>
+		</div>
+		
+	</div>
+	
+
+	<footer>
+		<div class="wrapper">
+			<div class="f_cols">
+				<h3>Location</h3>
+				<p>I live some where in VietNam <span class="phone">(+84) 12345678</span></p>
+			</div>	
+
+			<div class="f_cols">
+				<h3>Company</h3>
+				<ul>
+					<li><a href="#">I'm now study at Nong Lam University</a></li>
+				</ul>	
+			</div>	
+
+			<div class="f_cols">
+				<h3>Support</h3>
+				<ul>
+					<li><a href="#">If anything i can help you , please just text me</a></li>
+				</ul>	
+			</div>	
+
+		</div>
+	</footer><!-- End footer -->
+
+
+</body>
+<script type="text/javascript">
+	var buttons = document.getElementsByClassName('tablinks');
+	var contents = document.getElementsByClassName('tabcontent');
+	function showContent(id){
+		for (var i = 0; i < contents.length; i++) {
+			contents[i].style.display = 'none';
+		}
+		var content = document.getElementById(id);
+		content.style.display = 'block';
+	}
+	for (var i = 0; i < buttons.length; i++) {
+		buttons[i].addEventListener("click", function(){
+			var id = this.textContent;
+			for (var i = 0; i < buttons.length; i++) {
+				buttons[i].classList.remove("active");
+			}
+			this.className += " active";
+			showContent(id);
+		});
+	}
+	showContent('Requirement');
+</script>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Trang chủ | Minh Quân Phạm</title>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<meta name="description" content="Minima is a minimal, clean HTML5 multi-purpose template, well-coded & commented code"/>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+	<header>
+
+		<div class="wrapper">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="lab.html">Lab</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+	</header><!-- End Header -->
+
+	<section class="billboard">
+		<section class="caption">
+			<p class="cap_title">Welcome to my website</p>
+		</section>
+	</section><!-- End billboard -->
+
+
+	<div id="contain">
+		<div class="tab">
+			<button class="tablinks active">Requirement</button>
+			<button class="tablinks">Design</button>
+			<button class="tablinks">Implement</button>
+		</div>
+
+		<div id="Requirement" class="tabcontent">
+			<p>
+				Chọn 1 đối tượng bất kì trong thế giới thực, ví dụ như sin viên , môn học , giảng viên ,... để thiết kế trên phần
+				mềm một số chức năng trên web để thêm , sửa , xóa , tìm kiếm cho đối tượng đó.
+			</p>
+		</div>
+
+		<div id="Design" class="tabcontent">
+			<p>Thiết kế trên giấy</p>
+
+			<button class="download">Download file</button>
+			<p>Thiết kế trên Figma</p>
+			<div class="img">
+			<h4> Add New Phone Number</h4>
+			<img src="img/addphonenumber.png" height="100" width="200" />
+			<a href="img/addphonenumber.png" download="addphonenumber.png">
+			<img src="img/download.jpg" alt="download" width="30" height="30"></a>
+			<br>
+			</div>
+			<div class="img">
+			<h4> Edit Your Phone Number</h4>
+			<img src="img/Edityourphonenumber.png" height="100" width="200" />
+			<a href="img/Edityourphonenumber.png" download="Edityourphonenumber.png">
+			<img src="img/download.jpg" alt="download" width="30" height="30"></a>
+			</div>
+			<div class="img">
+			<h4> Delete Phone Number </h4>
+			<img src="img/Deletephonenumber.png" height="100" width="200"/>
+			<a href="img/Deletephonenumber.png" download="Deletephonenumber.png">
+			<img src="img/download.jpg" alt="download" width="30" height="30"></a>
+			</div>
+			<div class="img">
+			<h4> Seach Phone Number </h4>
+			<img src="img/Seachyourphone.png" height="100" width="200" />
+			<a href="img/Seachyourphone.png" download="Seachphonenumber.png">
+			<img src="img/download.jpg" alt="download" width="30" height="30"></a>
+			</div>
+			</div>
+
+		<div id="Implement" class="tabcontent">
+			<h3>Implement</h3>
+			<br>
+	<p> 
+	<center><iframe width="300px" height="400px" src="Addphonenumber.html"></iframe></center> <br>
+  	<a href="Addphonenumber.html" download="download">
+		<img src="img/Download.png" alt="download" width="30" height="30"></a>
+	<center><iframe width="300px" height="400px" src="Edityourphonenumber.html"></iframe></center> <br>
+	<a href="Edityourphonenumber.html" download="download">
+		<img src="img/Download.png" alt="download" width="30" height="30"></a>
+	<center><iframe width="300px" height="400px" src="Deleteyourphonenumber.html"></iframe></center> <br>
+	<a href="Deleteyourphonenumber.html" download="download">
+		<img src="img/Download.png" alt="download" width="30" height="30"></a>
+	<center><iframe width="300px" height="400px" src="Seachyourphone.html"></iframe></center> <br>
+	<a href="Seachyourphone.html" download="download">
+		<img src="img/Download.png" alt="download" width="30" height="30"></a>
+		<h4> Download All </h5>
+		<div class="img">
+		<a href="lab_1.html" download="download all">
+		<img src="img/Download.png" alt="download" width="30" height="30"></a>
+		</div>
+		</div>
+	
+	</div>
+
+
+	<footer>
+		<div class="wrapper">
+			<div class="f_cols">
+				<h3>Location</h3>
+				<p>I live some where in VietNam <span class="phone">(+84) 12345678</span></p>
+			</div>	
+
+			<div class="f_cols">
+				<h3>Company</h3>
+				<ul>
+					<li><a href="#">I'm now study at Nong Lam University</a></li>
+				</ul>	
+			</div>	
+
+			<div class="f_cols">
+				<h3>Support</h3>
+				<ul>
+					<li><a href="#">If anything i can help you , please just text me</a></li>
+				</ul>	
+			</div>	
+
+		</div>
+	</footer><!-- End footer -->
+
+
+</body>
+<script type="text/javascript">
+	var buttons = document.getElementsByClassName('tablinks');
+	var contents = document.getElementsByClassName('tabcontent');
+	function showContent(id){
+		for (var i = 0; i < contents.length; i++) {
+			contents[i].style.display = 'none';
+		}
+		var content = document.getElementById(id);
+		content.style.display = 'block';
+	}
+	for (var i = 0; i < buttons.length; i++) {
+		buttons[i].addEventListener("click", function(){
+			var id = this.textContent;
+			for (var i = 0; i < buttons.length; i++) {
+				buttons[i].classList.remove("active");
+			}
+			this.className += " active";
+			showContent(id);
+		});
+	}
+	showContent('Requirement');
+</script>
