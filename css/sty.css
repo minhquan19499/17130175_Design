@@ -13,7 +13,7 @@ body{
 }
 #header{
     height: 150px;
-    background-image: url("cgvlogo.png");;
+    background-image: url("img/cgvlogo.png");
     border: 2px solid #CDCDCD;
 }
 #header ul {

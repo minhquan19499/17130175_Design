@@ -181,7 +181,7 @@ header nav ul li a:hover{
 	background: url('../img/right_arrow_black.png') no-repeat;
 }
 #contain {
-	width: 510px;
+	width: 100%;
 
 	background: rgba(221, 221, 221, 0.54);
 	margin-top: 10px;
@@ -192,6 +192,7 @@ header nav ul li a:hover{
 	overflow: hidden;
 	border: 1px solid #ccc;
 	background-color: #f1f1f1;
+
 }
 
 /* định dạng các button tab */
@@ -204,6 +205,7 @@ header nav ul li a:hover{
 	padding: 14px 16px;
 	transition: 0.3s;
 	font-size: 17px;
+	width: 12px;
 }
 
 /* đổi màu khi một button tab được hover */
@@ -218,7 +220,7 @@ header nav ul li a:hover{
 
 /* định dạng nội dung hiển thị */
 #contain .tabcontent {
-	display: none;
+	display: block;
 	padding: 6px 12px;
 	border: 1px solid #ccc;
 	border-top: none;
